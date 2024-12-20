@@ -1,0 +1,129 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.scss.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+/*Index style*/
+h1{
+  font-family: "Helvetica", cursive;
+  color: darkslateblue !important;
+  margin-top: 30px !important;
+}
+/*Show NOTE style*/
+.note-container {
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.show-note {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.note-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.note-content {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.show-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.show-buttons .btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/*Style of the cards*/
+.sticky-note {
+  border-radius: 10px;
+  padding: 1rem;
+  color: #333;
+  font-family: "Helvetica", sans-serif;
+
+  &.yellow {
+    background-color: lightgoldenrodyellow;
+  }
+
+  &.pink {
+    background-color: lightpink;
+  }
+
+  &.blue {
+    background-color: lightsteelblue;
+  }
+
+  &.green {
+    background-color: palegreen;
+  }
+
+  &.orange {
+    background-color: peachpuff;
+  }
+}
+
+.card-actions {
+  position: absolute;
+  bottom: 1px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-actions a {
+  font-size: 1.2rem;
+  color: #261B23;
+  text-decoration: none;
+}
+
+.card-actions a:hover {
+  color: #000;
+}
+
+/*Create new note button style*/
+.create-note-button {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  background-color: linen;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-note-button:hover {
+  background-color: rosybrown;
+  transform: translateY(-2px);
+}
+
+.create-note-button:active {
+  background-color: palevioletred;
+  transform: translateY(0);
+}
